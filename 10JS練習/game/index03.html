@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>チーズ集め</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/test02.css" />
+  </head>
+  <body>
+    <!-- タイトル -->
+    <h1>チーズ集め</h1>
+    <!-- マス -->
+    <div class="ue">
+      <div class="masu">
+        <ul id="line_A">
+          <li class="A d" id="A0">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="A a" id="A1">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="A b" id="A2">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="A c" id="A3">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+        </ul>
+
+        <ul id="line_B">
+          <li class="B d" id="A4">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="B a" id="A5">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="B b" id="A6">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="B c" id="A7">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+        </ul>
+
+        <ul id="line_C">
+          <li class="C d" id="A8">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="C a" id="A9">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="C b" id="A10">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+          <li class="C c" id="A11">
+            <img src="img/kago.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+
+      <!-- ランキング -->
+      <div class="migi">
+        <div class="rk_w">
+          <h2 class="rk_t">ランキング</h2>
+          <dl class="rk">
+            <!-- 1位 -->
+            <h3 class="rk_1">1位</h3>
+            <dt class="rd_1">ラウンド：</dt>
+            <dd class="rd_1">3</dd>
+            <dt class="scr_1">スコア：</dt>
+            <dd class="scr_1">1000</dd>
+            <!-- 2位 -->
+            <h3 class="rk_2">2位</h3>
+            <dt class="rd_2">ラウンド：</dt>
+            <dd class="rd_2">3</dd>
+            <dt class="scr_2">スコア：</dt>
+            <dd class="scr_2">900</dd>
+            <!-- 3位 -->
+            <h3 class="rk_3">3位</h3>
+            <dt class="rd_3">ラウンド：</dt>
+            <dd class="rd_3">2</dd>
+            <dt class="scr_3">スコア：</dt>
+            <dd class="scr_3">800</dd>
+            <!-- 4位 -->
+            <h3 class="rk_4">4位</h3>
+            <dt class="rd_4">ラウンド：</dt>
+            <dd class="rd_4">1</dd>
+            <dt class="scr_4">スコア：</dt>
+            <dd class="scr_4">700</dd>
+            <!-- 5位 -->
+            <h3 class="rk_5">5位</h3>
+            <dt class="rd_5">ラウンド：</dt>
+            <dd class="rd_5">1</dd>
+            <dt class="scr_5">スコア：</dt>
+            <dd class="scr_5">600</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- 手札 -->
+    <div class="sita">
+      <div class="tefuda">
+        <p id="T0">0</p>
+        <p id="T1">1</p>
+        <p id="T2">2</p>
+        <p id="T3">3</p>
+        <p id="T4">4</p>
+      </div>
+      <!-- スコア -->
+      <div class="scr_w">
+        <h2 class="scr_t">スコア</h2>
+        <dl class="scr_n">
+          <dt class="rd">ラウンド：</dt>
+          <dd id="rd">1</dd>
+          <dt class="scr">スコア：</dt>
+          <dd id="scr">0</dd>
+        </dl>
+      </div>
+      <!-- ルール説明 -->
+      <div class="btn_w">
+        <h2 id="ru_btn">遊び方</h2>
+
+        <!-- リセット -->
+        <p id="reset_btn">リセット</p>
+      </div>
+    </div>
+
+    <!-- ルール説明本文 -->
+    <div class="ru" style="display: none;">
+      <h3>遊び方</h3>
+      <ul class="ru0">
+        <li class="ru1"><p>目的</p></li>
+        <li class="ru2"><p>盤面</p></li>
+        <li class="ru3"><p>操作</p></li>
+        <li class="ru4"><p>ボーナス</p></li>
+      </ul>
+    </div>
+
+    <!-- リザルト -->
+    <div class="res" style="display: none;">
+      <h2 class="res_t">リザルト</h2>
+      <p class="rd_res">ラウンド：0</p>
+      <p class="scr_res">スコア：0</p>
+    </div>
+    <!-- ゲームオーバー ランキング -->
+    <div class="rk_w" style="display: none;">
+      <h3 class="rk_t">ランキング</h3>
+      <dl class="rk">
+        <!-- 1位 -->
+        <h4 class="rk_1">1位</h4>
+        <dt class="rd_1">ラウンド：</dt>
+        <dd class="rd_1">3</dd>
+        <dt class="scr_1">スコア：</dt>
+        <dd class="scr_1">1000</dd>
+        <!-- 2位 -->
+        <h4 class="rk_1">2位</h4>
+        <dt class="rd_1">ラウンド：</dt>
+        <dd class="rd_1">3</dd>
+        <dt class="scr_1">スコア：</dt>
+        <dd class="scr_1">900</dd>
+        <!-- 3位 -->
+        <h4 class="rk_1">3位</h4>
+        <dt class="rd_1">ラウンド：</dt>
+        <dd class="rd_1">2</dd>
+        <dt class="scr_1">スコア：</dt>
+        <dd class="scr_1">800</dd>
+        <!-- 4位 -->
+        <h4 class="rk_1">4位</h4>
+        <dt class="rd_1">ラウンド：</dt>
+        <dd class="rd_1">1</dd>
+        <dt class="scr_1">スコア：</dt>
+        <dd class="scr_1">700</dd>
+        <!-- 5位 -->
+        <h4 class="rk_1">5位</h4>
+        <dt class="rd_1">ラウンド：</dt>
+        <dd class="rd_1">1</dd>
+        <dt class="scr_1">スコア：</dt>
+        <dd class="scr_1">600</dd>
+      </dl>
+    </div>
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/test05.js"></script>
+  </body>
+</html>

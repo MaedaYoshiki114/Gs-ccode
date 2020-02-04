@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <meter min="0" max="100" value="10">10%</meter>
+    <meter max="100" value="50">50%</meter>
+    <meter max="100" value="90">90%</meter>
+    <script>
+      let mikuji = Math.ceil(Math.random() * 5);
+
+      if (mikuji == 1) {
+        alert("大吉");
+      } else if (mikuji == 2) {
+        alert("中吉");
+      } else if (mikuji == 3) {
+        alert("吉");
+      } else if (mikuji == 4) {
+        alert("凶");
+      } else if (mikuji == 5) {
+        alert("大凶");
+      }
+    </script>
+  </body>
+</html>

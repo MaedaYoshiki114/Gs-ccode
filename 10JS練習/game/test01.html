@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test01.css" />
+  </head>
+  <body>
+    <h1>チーズ集め</h1>
+    <ul id="line_A">
+      <li class="A d" id="A0">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="A a" id="A1">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="A b" id="A2">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="A c" id="A3">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+    </ul>
+
+    <ul id="line_B">
+      <li class="B d" id="A4">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="B a" id="A5">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="B b" id="A6">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="B c" id="A7">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+    </ul>
+
+    <ul id="line_C">
+      <li class="C d" id="A8">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="C a" id="A9">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="C b" id="A10">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+      <li class="C c" id="A11">
+        <input type="button" /><img src="img/kago.jpg" alt="" />
+      </li>
+    </ul>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+      // ページが読み込まれたら実行
+      // window.onload = function() {
+      let roop, yaku;
+      let kago = [
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu",
+        "tizu"
+      ];
+
+      function tyuusen(roop, yaku) {
+        for (let i = 0; i < roop; i++) {
+          let kuji = Math.ceil(Math.random() * 12);
+          tyuusen();
+          if (kuji == 0) {
+            if (kago[0] == "tizu") {
+              kago[0] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 1) {
+            if (kago[1] == "tizu") {
+              kago[1] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 2) {
+            if (kago[2] == "tizu") {
+              kago[2] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 3) {
+            if (kago[3] == "tizu") {
+              kago[3] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 4) {
+            if (kago[4] == "tizu") {
+              kago[4] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 5) {
+            if (kago[5] == "tizu") {
+              kago[5] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 6) {
+            if (kago[6] == "tizu") {
+              kago[6] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 7) {
+            if (kago[7] == "tizu") {
+              kago[7] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 8) {
+            if (kago[8] == "tizu") {
+              kago[8] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 9) {
+            if (kago[9] == "tizu") {
+              kago[9] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 10) {
+            if (kago[10] == "tizu") {
+              kago[10] = yaku;
+            } else {
+              kuji++;
+            }
+          } else if (kuji == 11) {
+            if (kago[11] == "tizu") {
+              kago[11] = yaku;
+            } else {
+              kuji = 0;
+            }
+          }
+        }
+      }
+      tyuusen(3, "nezu");
+      tyuusen(4, "rea");
+      console.log(kago);
+      // };
+    </script>
+  </body>
+</html>

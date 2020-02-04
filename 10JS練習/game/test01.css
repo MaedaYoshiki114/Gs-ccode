@@ -1,0 +1,24 @@
+@charset "utf-8";
+#line_A {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+}
+#line_B {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+}
+#line_C {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+}
+li img {
+  width: 200px;
+  height: 180px;
+  margin: 10px;
+  color: aliceblue;
+  background-color: #fff;
+  border: black 2px;
+}

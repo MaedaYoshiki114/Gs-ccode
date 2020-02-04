@@ -1,0 +1,376 @@
+/* ここから下に記載していく */
+/* 変数宣言 */
+:root {
+  --midasi: 30px;
+}
+
+/* 共通スタイル */
+html {
+  font-size: 62.5%; /*16px * 62.5% =10px */
+}
+body {
+  font-size: 1.6rem;
+  width: 1420px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 60px auto 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 30px auto 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/************************************
+**********【ナビ・メニュー】**********
+*************************************/
+.navi {
+  display: block;
+  padding: 50px 25px;
+  font-size: 21px;
+}
+.menew1 {
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  text-align: center;
+}
+.menew2 {
+  width: 980px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/************************************
+********【メインビジュアル】 *********
+*************************************/
+
+.main {
+  width: 1200px;
+  height: 400px;
+  background: url("../img/mainbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.top1 {
+  font-size: 38px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 130px;
+}
+.top2 {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/************************************
+*************【About】***************
+*************************************/
+/* .about {
+  width: 1200px;
+} */
+#About {
+  color: #ffd61a;
+}
+.about_msg {
+  margin: 60px auto 0;
+  text-align: center;
+}
+.about_msg1 {
+  margin: 60px auto 0;
+}
+.about_msg2 {
+  margin: 20px auto 0;
+}
+.about_msg3 {
+  margin: 40px auto 0;
+}
+.about_msg4 {
+  margin: 40px auto 0;
+}
+.about_img {
+  width: 1200px;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin: auto;
+  margin-top: 80px;
+}
+.about_img p {
+  width: 25%;
+}
+.about_img p img {
+  width: 100%;
+}
+/************************************
+**************【Course】*************
+*************************************/
+#Course {
+  color: #222222;
+}
+.course {
+  width: 1200px;
+  margin: auto;
+}
+.course h3 {
+  font-weight: bold;
+}
+.course_msg0 {
+  text-align: center;
+}
+.course1 {
+  display: flex;
+  background-color: #f4f4f4f4;
+  margin-top: 60px;
+}
+.course2 {
+  display: flex;
+  background-color: #f4f4f4f4;
+  margin-top: 0px;
+}
+.course3 {
+  background-color: #f4f4f4f4;
+  display: flex;
+  margin-top: 0px;
+}
+.course_img {
+  width: 600px;
+  height: 400px;
+}
+.course_msg01 {
+  margin: 40px 0 0;
+}
+.course_msg_a {
+  width: 480px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+}
+.course_msg_b {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 50px;
+  margin-left: auto;
+}
+.course_msg11 {
+  margin: 40px 0 0;
+}
+.course_msg21 {
+  margin: 40px 0 0;
+}
+.course_msg31 {
+  margin: 40px 0 0;
+}
+
+/************************************
+**************【NEWS】***************
+*************************************/
+#NEWS {
+  color: #ffd61a;
+}
+.news {
+  width: 1200px;
+  margin: auto;
+}
+.news_msg {
+  width: 120px;
+  text-align: center;
+  margin: auto;
+}
+.news_day {
+  margin-top: 30px;
+}
+.news_msg1 {
+  margin-top: 24px;
+}
+.news0 {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 60px;
+}
+.news1 {
+  width: 300px;
+  margin-left: 30px;
+}
+.news2 {
+  width: 300px;
+  margin-left: 30px;
+}
+.news3 {
+  width: 300px;
+  margin-left: 30px;
+}
+.news1:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+.news2:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+.news3:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+.botan {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  padding: 21px 0;
+  text-align: center;
+  width: 300px;
+  background-color: #ffd61a;
+  color: #ffffff;
+}
+.botan:hover {
+  background-color: #222222;
+}
+/************************************
+**************【Access】*************
+*************************************/
+.access {
+  width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+  background-color: #f4f4f4f4;
+}
+#Access {
+  color: #222222;
+}
+.access_msg1 {
+  text-align: center;
+  padding-top: 1px;
+}
+.map {
+  margin-top: 60px;
+}
+.access_msg2 {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.access_msg2 dt {
+  width: 120px;
+  padding: 17px 0;
+  margin: auto;
+  padding-top: 13px;
+}
+.access_msg2 dd {
+  width: 380px;
+  padding: 17px 0;
+  margin: auto;
+  padding-top: 13px;
+}
+
+/************************************
+**************【Contact】************
+*************************************/
+.Contact {
+  width: 1200px;
+  margin: 60px auto;
+}
+#Contact {
+  color: #222222;
+}
+.Contact_msg {
+  width: 410px;
+  margin: 30px auto;
+  text-align: center;
+}
+.Contact_msg01 {
+  margin-top: 60px;
+}
+.Contact_msg02 {
+  margin-top: 30px;
+}
+.form {
+  width: 640px;
+  margin: auto;
+  margin-top: 70px;
+}
+.form-in {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.form-in dt {
+  width: 157px;
+  padding: 4px 64px 4px 15px;
+  border-top: solid 2px #bfbfbf;
+  border-bottom: solid 2px #bfbfbf;
+}
+.form-in dd {
+  width: 396px;
+  border-top: solid 2px #bfbfbf;
+  border-bottom: solid 2px #bfbfbf;
+  border-left: solid 2px #bfbfbf;
+}
+.form-p {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  border: solid 1px #bfbfbf;
+  margin: 4px;
+}
+label {
+  margin: 8px 0;
+}
+.form-a {
+  border-top: solid 2px #bfbfbf;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+.chbox {
+  display: flex;
+  flex-direction: column;
+}
+/************************************
+**************【下の帯】*************
+*************************************/
+.obi {
+  display: block;
+  background-color: #707070;
+  color: #ffffff;
+  width: 1420px;
+  margin-top: 140px;
+  padding: 30px 0px;
+  text-align: center;
+}
+/* topに戻る */
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+#page_top a:hover {
+  background-color: #666;
+  text-decoration: none;
+}

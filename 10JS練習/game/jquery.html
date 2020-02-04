@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="show">表示</button>
+    <button id="hide">非表示</button>
+    <div id="ex">aaaaaa</div>
+    <div id="c">0　回</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      let count = 0;
+      let look = 0;
+      $("#show").on("click", function() {
+        $("#ex").show(2000, "slow");
+        count += 1;
+        look = count + " 回";
+        $("#c").html(look);
+        $("#c").css("border", "1px solid #000");
+      });
+      $("#hide").on("click", function() {
+        $("#ex").fadeOut(2000);
+      });
+    </script>
+  </body>
+</html>

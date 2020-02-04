@@ -1,0 +1,146 @@
+/* 全体設定 */
+body {
+  background-color: #00a381;
+  width: 1440px;
+  height: 1080px;
+}
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+.ue {
+  display: flex;
+}
+.migi {
+  display: flex;
+  flex-direction: column;
+}
+.sita {
+  display: flex;
+}
+/* マス */
+.masu {
+  width: 1180px;
+  height: 690px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#line_A {
+  display: flex;
+  margin: 0;
+}
+#line_B {
+  display: flex;
+  margin: 0;
+}
+#line_C {
+  display: flex;
+  margin: 0;
+}
+.masu li img {
+  width: 275px;
+  height: 210px;
+  margin: 10px;
+  color: aliceblue;
+  background-color: #fff;
+  border: black 2px;
+}
+/* ランキング */
+.rk_t {
+  width: 260px;
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+.rk_w {
+  width: 260px;
+  height: 678px;
+  background-color: #bcbcff;
+  margin-top: 18px;
+}
+.rk {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.rk_w h3 {
+  width: 260px;
+  font-size: 24px;
+  margin-top: 30px;
+}
+.rk_w dt {
+  width: 110px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.rk_w dd {
+  width: 130px;
+  text-align: right;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* 手札 */
+.tefuda {
+  display: flex;
+  width: 905px;
+  height: 147px;
+  background-color: #ff7f7f;
+  margin-top: 10px;
+}
+.tefuda li img {
+  width: 141px;
+  height: 107px;
+  margin: 20px;
+  background-color: #ffc1c1;
+}
+/* スコア */
+.scr_w {
+  width: 255px;
+  height: 147px;
+  margin-top: 10px;
+  background-color: #93ff93;
+}
+.scr_t {
+  font-size: 26px;
+  margin: 10px auto;
+  text-align: center;
+}
+.scr_n {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.scr_n dt {
+  width: 110px;
+  font-size: 22px;
+}
+.scr_n dd {
+  width: 120px;
+  font-size: 22px;
+  text-align: right;
+}
+/* ルール説明ボタン */
+.btn_w {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  height: 147px;
+  margin-top: 10px;
+}
+#ru_btn {
+  width: 240px;
+  height: 33px;
+  margin: 20px;
+}
+/* リセット */
+#reset_btn {
+  width: 240px;
+  height: 33px;
+  margin: 20px;
+}
+/* ルール説明本文 */
+
+/* リザルト */

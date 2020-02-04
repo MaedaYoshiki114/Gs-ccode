@@ -1,0 +1,282 @@
+/* 全体設定 */
+body {
+  background-color: #00a381;
+  width: 1440px;
+  height: 900px;
+}
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+.ue {
+  display: flex;
+}
+.migi {
+  display: flex;
+  flex-direction: column;
+}
+.sita {
+  display: flex;
+}
+/* マス */
+.masu {
+  width: 1180px;
+  height: 690px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#line_A {
+  display: flex;
+  margin: 0;
+}
+#line_B {
+  display: flex;
+  margin: 0;
+}
+#line_C {
+  display: flex;
+  margin: 0;
+}
+.masu li img {
+  width: 275px;
+  height: 210px;
+  margin: 10px;
+  color: aliceblue;
+  background-color: #fff;
+  border: black 2px;
+}
+/* ランキング */
+.rk_t {
+  width: 260px;
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+.rk_w {
+  width: 260px;
+  height: 678px;
+  background-color: #bcbcff;
+  margin-top: 18px;
+}
+.rk {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.rk_w h3 {
+  width: 260px;
+  font-size: 24px;
+  margin-top: 30px;
+}
+.rk_w dt {
+  width: 110px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.rk_w dd {
+  width: 130px;
+  text-align: right;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* 手札 */
+.tefuda {
+  display: flex;
+  width: 905px;
+  height: 147px;
+  background-color: #ff7f7f;
+  margin-top: 10px;
+}
+.tefuda li img {
+  width: 141px;
+  height: 107px;
+  margin: 20px;
+  background-color: #ffc1c1;
+}
+/* スコア */
+.scr_w {
+  width: 255px;
+  height: 147px;
+  margin-top: 10px;
+  background-color: #93ff93;
+}
+.scr_t {
+  font-size: 26px;
+  margin: 10px auto;
+  text-align: center;
+}
+.scr_n {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.scr_n dt {
+  width: 110px;
+  font-size: 22px;
+}
+.scr_n dd {
+  width: 120px;
+  font-size: 22px;
+  text-align: right;
+}
+.life img {
+  width: 230px;
+  margin-left: 13px;
+}
+/* ルール説明ボタン */
+.btn_w {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  height: 147px;
+  margin-top: 10px;
+}
+.btn_w img {
+  width: 240px;
+  height: 73px;
+  margin-left: 30px;
+}
+/* ルール説明本文 */
+.ru {
+  width: 1440px;
+  height: 900px;
+  background: rbga(0, 0, 0, 0.5);
+  background-color: #8b4513;
+  text-align: center;
+  position: relative;
+  position: absolute;
+  top: 0; /* 上からの位置指定 */
+  bottom: 0; /* 下からの位置指定 */
+  left: 0; /* 左からの位置指定 */
+  right: 0; /* 右からの位置指定 */
+  margin: auto; /* 位置調整と組み合わせて上下中央に */
+}
+.ru p {
+  width: 2000px;
+  height: 880px;
+  display: flex;
+  margin: 0;
+}
+
+.ru0 img {
+  float: left;
+  cursor: pointer;
+  width: 1000px;
+  height: 880px;
+}
+.ru .ru0 {
+  width: 1000px;
+  height: 880px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  display: flex;
+}
+.ru_next_btn img {
+  width: 200px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+/* リザルト */
+.res {
+  width: 1440px;
+  height: 900px;
+  background: rbga(0, 0, 0, 0.5);
+  background-color: #8b4513;
+  text-align: center;
+  position: relative;
+  position: absolute;
+  top: 0; /* 上からの位置指定 */
+  bottom: 0; /* 下からの位置指定 */
+  left: 0; /* 左からの位置指定 */
+  right: 0; /* 右からの位置指定 */
+  margin: auto; /* 位置調整と組み合わせて上下中央に */
+}
+.res_t {
+  text-align: center;
+  margin: auto;
+  font-size: 32px;
+}
+.res_scr {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 400;
+}
+.res_scr dt {
+  width: 170px;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.res_scr dd {
+  width: 170px;
+  text-align: right;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.res_sum {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 400px;
+}
+.res_sum dt {
+  width: 170px;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.res_sum dd {
+  width: 170px;
+  text-align: right;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.next_btn img {
+  width: 300px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+/* ゲームオーバー */
+.gameover {
+  width: 1440px;
+  height: 900px;
+  background: rbga(0, 0, 0, 0.5);
+  background-color: #8b4513;
+  text-align: center;
+  position: relative;
+  position: absolute;
+  top: 0; /* 上からの位置指定 */
+  bottom: 0; /* 下からの位置指定 */
+  left: 0; /* 左からの位置指定 */
+  right: 0; /* 右からの位置指定 */
+  margin: auto; /* 位置調整と組み合わせて上下中央に */
+}
+.gameover_t {
+  text-align: center;
+  margin: auto;
+  font-size: 32px;
+}
+.gameover_scr {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 400px;
+}
+.gameover_scr dt {
+  width: 170px;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.gameover_scr dd {
+  width: 170px;
+  text-align: right;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.gameover .rk {
+  width: 260px;
+}
