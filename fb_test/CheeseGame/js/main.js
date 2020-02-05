@@ -1,17 +1,5 @@
-// Firebase準備
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyB-cUrncOISmq5w102yNkLE6tWY-gnmO4w",
-  authDomain: "cheese-game.firebaseapp.com",
-  databaseURL: "https://cheese-game.firebaseio.com",
-  projectId: "cheese-game",
-  storageBucket: "cheese-game.appspot.com",
-  messagingSenderId: "773789785106",
-  appId: "1:773789785106:web:1aa92bab2414cd62fb0ccb"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-// Firebase準備終了
+// ページが読み込まれたら実行
+// window.onload = function() {
 
 //準備 変数宣言
 let chek = 0;
