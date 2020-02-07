@@ -183,6 +183,7 @@ let count = 0;
 for (let tg_roop = 0; tg_roop < 12; tg_roop++) {
   console.log(tg_roop);
   let tg_a = "#A" + tg_roop; // IDに変換
+  let cb = "#B" + tg_roop; // IDに変換
   $(tg_a).on("click", function() {
     // クリックされたら
     let y = kago[tg_roop]; //クリックされた場所の役を取得
@@ -191,6 +192,7 @@ for (let tg_roop = 0; tg_roop < 12; tg_roop++) {
       $(tg_a).slideUp(10); //元の画像を消す
       $(tg_a).html('<img src="img/tizu.png">'); //tizuの画像に切り替え
       $(tg_a).slideDown(500); //tizuの画像表示
+      $(cb).show(); //クリックブロック発動
       tefuda[count] = "tizu";
       count++;
       scr_ch(count - 1);
@@ -200,6 +202,7 @@ for (let tg_roop = 0; tg_roop < 12; tg_roop++) {
       $(tg_a).slideUp(10);
       $(tg_a).html('<img src="img/rea.png" />');
       $(tg_a).slideDown(500);
+      $(cb).show(); //クリックブロック発動
       tefuda[count] = "rea";
       count++;
       scr_ch(count - 1);
@@ -209,6 +212,7 @@ for (let tg_roop = 0; tg_roop < 12; tg_roop++) {
       $(tg_a).slideUp(10);
       $(tg_a).html('<img src="img/nezu.png" />');
       $(tg_a).slideDown(500);
+      $(cb).show(); //クリックブロック発動
       tefuda[count] = "nezu";
       life--;
       count++;
@@ -230,7 +234,7 @@ for (let tg_roop = 0; tg_roop < 12; tg_roop++) {
     }
 
     //5枚目まで埋まったら
-    if (tefuda[4] != null) {
+    if (tefuda[4] != null && 1 <= life) {
       clear = 1;
       save["rd_n"] = rd + 1;
       save["scr_n"] = scr;
@@ -238,7 +242,8 @@ for (let tg_roop = 0; tg_roop < 12; tg_roop++) {
       json_save = JSON.stringify(save);
       localStorage.setItem("json_save", json_save);
 
-      $(".res").show(1000);
+      $(".cb").hide(); //クリックブロック非表示
+      $(".res").fadeIn(2000);
       if (scr_nezu == 0) {
         scr = scr + 20;
         $(".scr_s").html(scr);
@@ -263,7 +268,8 @@ for (let tg_roop = 0; tg_roop < 12; tg_roop++) {
       $(".life").html('<img src="img/life4.png" />');
     }
     if (life == 0) {
-      $(".gameover").fadeIn(1000);
+      $(".cb").hide(); //クリックブロック非表示
+      $(".gameover").fadeIn(2000);
       save["rd_n"] = 1;
       save["scr_n"] = 0;
       save["life"] = 2;
